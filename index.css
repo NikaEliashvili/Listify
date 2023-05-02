@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.6);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(58, 2, 2, 0.6);
+}
+
+::-webkit-scrollbar-corner {
+    visibility: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #b9b4db;
+    padding-bottom: 0;
+    user-select: none;
+}
+
+h1 {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(89, 12, 183);
+}
+
+.main {
+    display: block;
+    margin: 0 auto;
+    max-width: 450px;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+hr {
+    height: 3px;
+    background-color: rgba(4, 97, 229, 0.3);
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.logo-img {
+    display: block;
+    margin: -1.8rem auto 0;
+    padding: 0;
+    width: 12rem;
+}
+
+.input-div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+::placeholder {
+    color: rgba(7, 61, 136, 0.5);
+    font-style: italic;
+    font-size: 1rem;
+}
+
+input {
+    outline: none;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(143, 5, 158);
+    color: rgba(86, 17, 171, 0.8);
+}
+
+.add-btn,
+input {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 0.7rem;
+    padding: 1rem 1.4rem;
+}
+
+.add-btn {
+    background-color: rgb(103, 19, 114);
+    box-shadow: 1px 3px rgb(46, 3, 51);
+    color: rgb(253, 194, 118);
+    border: none;
+    cursor: pointer;
+}
+
+.add-btn:hover,
+.add-btn:focus {
+    background-color: rgb(84, 12, 94);
+}
+
+ol {
+    max-height: 40vh;
+    list-style: decimal;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: overlay;
+}
+
+.list-item-div {
+    font-size: 1.25rem;
+    padding: 0.4rem 0.2rem 0.4rem 2.2rem;
+    border-radius: 1rem;
+    border-top: 0.5rem solid rgb(168, 145, 176);
+    background-color: rgb(222, 222, 222);
+    font-family: inherit;
+    font-weight: 500;
+    word-spacing: 1.25rem;
+    cursor: pointer;
+}
+
+.list-item-hover {
+    border-top: 0.5rem solid rgb(227, 67, 67);
+}
+
+.list-font {
+    color: rgb(4, 0, 0);
+    font-weight: 500;
+    user-select: text;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 0 0 0 1.5rem;
+    padding-right: 50px;
+    color: rgb(60, 5, 128);
+    font-weight: 900;
+}
+
+.done {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgb(47, 3, 3)
+}
+
+.visibility {
+    display: none;
+}
+
+.visble {
+    visibility: hidden;
+}
+
+.delete-notification,
+.emptyField-error {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    border-radius: 0.6rem;
+}
+
+.delete-notification {
+    background-color: rgb(55, 12, 76);
+    margin: auto;
+    height: 150px;
+}
+
+.delete-notification h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-align: center;
+}
+
+.delete-buttons {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+}
+
+.delete-buttons button {
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: none;
+    color: rgb(0, 255, 162);
+    border: 2px solid rgb(0, 255, 162);
+}
+
+.delete-btn {
+    background-color: rgb(0, 255, 162);
+    color: rgb(207, 41, 41);
+}
+
+ol h4 {
+    margin: 0;
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: rgb(164, 85, 11);
+    line-height: 2rem;
+}
+
+.emptyField-error h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    color: rgb(128, 19, 38);
+}
+
+.emptyField-error {
+    background-color: rgb(255, 225, 227);
+    margin: 1rem auto;
+    height: 100px;
+    padding: 0 2.9rem;
+    box-shadow: 0 15px 20px rgba(220, 32, 32, 0.3);
+}
+
+.delete-icon:hover,
+.delete-icon:focus {
+    font-size: 1.4rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-overline-none {
+    text-decoration: none;
+}
+
+.color-red {
+    color: #840606;
+}
+
+
+
+
+.menu-container {
+    position: fixed;
+    right: 0.3rem;
+    top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 4rem;
+    padding: 0.5rem 0;
+    border: 3px solid rgb(103, 19, 114);
+    border-radius: 0.6rem;
+    background-color: #a49fc7;
+    box-shadow: 0 0 10px rgba(106, 101, 139, 0.3);
+}
+
+.history-icon {
+    font-size: 2rem;
+    color: rgb(103, 19, 114);
+    margin: 0 auto;
+}
+
+.history-list {
+    position: fixed;
+    right: 0.4rem;
+    top: 8.5rem;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(205, 198, 254);
+}
