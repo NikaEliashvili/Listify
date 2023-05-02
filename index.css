@@ -46,7 +46,7 @@ h1 {
 .main {
     display: block;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 400px;
     height: 100%;
     padding: 0 1rem;
 }
@@ -179,7 +179,7 @@ li {
 
 .delete-notification {
     background-color: rgb(55, 12, 76);
-    margin: auto;
+    margin: 13rem auto 0 auto;
     height: 150px;
 }
 

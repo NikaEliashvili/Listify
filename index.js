@@ -57,7 +57,6 @@ addBtnEl.addEventListener("click", () => {
     }, 3000);
   }
   clearInputValueEl();
-  console.log(inputValue);
 });
 
 function clearInputValueEl() {
@@ -73,7 +72,6 @@ function addItemInList(item) {
   let itemValue = item[1];
   const itemKeysBoolean = [];
   itemKeysBoolean.push(`{${itemKey}: false }`);
-  console.log(itemKeysBoolean[0]);
   let newDivEl = document.createElement("div");
   newDivEl.classList.add("list-item-div");
   newDivEl.classList.add("undone");
