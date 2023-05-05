@@ -18,7 +18,6 @@ const app = initializeApp(appSettings);
 const database = getDatabase(app);
 
 const listInDB = ref(database, "list");
-const saveInDB = ref(database, "historySave");
 
 const inputFieldEl = document.getElementById("input-field");
 const addBtnEl = document.getElementById("add-btn");
